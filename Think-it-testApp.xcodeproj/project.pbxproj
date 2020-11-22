@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		61AEB56A256682FF00B42520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEB569256682FF00B42520 /* AppDelegate.swift */; };
-		61AEB56C256682FF00B42520 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEB56B256682FF00B42520 /* ViewController.swift */; };
 		61AEB56F256682FF00B42520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61AEB56D256682FF00B42520 /* Main.storyboard */; };
 		61AEB572256682FF00B42520 /* Think_it_testApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61AEB570256682FF00B42520 /* Think_it_testApp.xcdatamodeld */; };
 		61AEB5742566830400B42520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61AEB5732566830400B42520 /* Assets.xcassets */; };
 		61AEB5772566830400B42520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61AEB5752566830400B42520 /* LaunchScreen.storyboard */; };
 		61AEB5822566830400B42520 /* Think_it_testAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEB5812566830400B42520 /* Think_it_testAppTests.swift */; };
 		61AEB58D2566830400B42520 /* Think_it_testAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEB58C2566830400B42520 /* Think_it_testAppUITests.swift */; };
+		61AEB59B256696D200B42520 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEB59A256696D200B42520 /* HomeVC.swift */; };
+		61AEB59F25669E6E00B42520 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEB59E25669E6E00B42520 /* DetailVC.swift */; };
+		61AEB5A22566A14300B42520 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEB5A12566A14300B42520 /* Room.swift */; };
+		61AEB5A52566A1C900B42520 /* RoomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEB5A42566A1C900B42520 /* RoomCellTableViewCell.swift */; };
+		61AEB5A82566A6E100B42520 /* dataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEB5A72566A6E100B42520 /* dataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 /* Begin PBXFileReference section */
 		61AEB566256682FF00B42520 /* Think-it-testApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Think-it-testApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61AEB569256682FF00B42520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61AEB56B256682FF00B42520 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61AEB56E256682FF00B42520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61AEB571256682FF00B42520 /* Think_it_testApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Think_it_testApp.xcdatamodel; sourceTree = "<group>"; };
 		61AEB5732566830400B42520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		61AEB5882566830400B42520 /* Think-it-testAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Think-it-testAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61AEB58C2566830400B42520 /* Think_it_testAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_it_testAppUITests.swift; sourceTree = "<group>"; };
 		61AEB58E2566830400B42520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61AEB59A256696D200B42520 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		61AEB59E25669E6E00B42520 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		61AEB5A12566A14300B42520 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		61AEB5A42566A1C900B42520 /* RoomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCellTableViewCell.swift; sourceTree = "<group>"; };
+		61AEB5A72566A6E100B42520 /* dataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,11 @@
 		61AEB568256682FF00B42520 /* Think-it-testApp */ = {
 			isa = PBXGroup;
 			children = (
+				61AEB5A92566C19100B42520 /* Controllers */,
+				61AEB5A62566A6C100B42520 /* service */,
+				61AEB5A32566A1A200B42520 /* Views */,
+				61AEB5A02566A12200B42520 /* models */,
 				61AEB569256682FF00B42520 /* AppDelegate.swift */,
-				61AEB56B256682FF00B42520 /* ViewController.swift */,
 				61AEB56D256682FF00B42520 /* Main.storyboard */,
 				61AEB5732566830400B42520 /* Assets.xcassets */,
 				61AEB5752566830400B42520 /* LaunchScreen.storyboard */,
@@ -126,6 +137,39 @@
 				61AEB58E2566830400B42520 /* Info.plist */,
 			);
 			path = "Think-it-testAppUITests";
+			sourceTree = "<group>";
+		};
+		61AEB5A02566A12200B42520 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				61AEB5A12566A14300B42520 /* Room.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		61AEB5A32566A1A200B42520 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61AEB5A42566A1C900B42520 /* RoomCellTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61AEB5A62566A6C100B42520 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				61AEB5A72566A6E100B42520 /* dataService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		61AEB5A92566C19100B42520 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				61AEB59A256696D200B42520 /* HomeVC.swift */,
+				61AEB59E25669E6E00B42520 /* DetailVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61AEB5A52566A1C900B42520 /* RoomCellTableViewCell.swift in Sources */,
 				61AEB572256682FF00B42520 /* Think_it_testApp.xcdatamodeld in Sources */,
-				61AEB56C256682FF00B42520 /* ViewController.swift in Sources */,
+				61AEB59F25669E6E00B42520 /* DetailVC.swift in Sources */,
+				61AEB5A82566A6E100B42520 /* dataService.swift in Sources */,
+				61AEB59B256696D200B42520 /* HomeVC.swift in Sources */,
 				61AEB56A256682FF00B42520 /* AppDelegate.swift in Sources */,
+				61AEB5A22566A14300B42520 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

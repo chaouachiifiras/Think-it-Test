@@ -16,7 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
+        if ((UserDefaults.standard.object(forKey: "Name") as? String) != nil) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "detailVC")
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        }
         return true
     }
 
